@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.scss';
+import LightsContainer from './components/LightsContainer';
 
 class App extends Component {
   render() {
@@ -8,7 +8,7 @@ class App extends Component {
         <header className="header">
         </header>
         <main>
-
+          <LightsContainer />
         </main>
       </div>
     );
