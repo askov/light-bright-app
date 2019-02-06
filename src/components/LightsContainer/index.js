@@ -7,7 +7,12 @@ class LightsContainer extends Component {
   render() {
     return (
       <div className="lights-container">
-        <Light />
+        {
+          [...Array(162)].map((el, index) => {
+            return <Light key={index}/>
+          })
+        }
+
       </div>
     );
   }

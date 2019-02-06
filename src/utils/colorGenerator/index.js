@@ -1,4 +1,4 @@
-import { constants } from '../../config';
+import config  from '../../config';
 
 /**
  * Class representing color generator.
@@ -9,7 +9,7 @@ export default class ColorGenerator {
    * @param {string[]} colors - color set
    */
   constructor(colors) {
-    this.colors = colors || constants.DEFAULT_LIGHT_COLORS;
+    this.colors = colors || config.constants.DEFAULT_LIGHT_COLORS;
   }
 
   /**
@@ -27,7 +27,7 @@ export default class ColorGenerator {
    *
    */
   getRandomColor(exclude) {
-    let colors = this.colors;
+    let colors = [].concat(this.colors);
     if (exclude) {
       const index = colors.findIndex((color) => color === exclude);
       if (index > -1) {
