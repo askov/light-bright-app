@@ -1,29 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
-import colorGenerator from '../../utils/colorGenerator'
 
-class Light extends Component {
-  constructor(props) {
-    super(props);
-    this.cg = new colorGenerator();
-    this.state = { color: '#e2e2e2' };
-    this.changeColor = this.changeColor.bind(this);
-  }
-  changeColor() {
-    const newColor = this.cg.getRandomColor(this.state.color);
-    if (newColor) {
-      this.setState({color: newColor});
-    }
-  }
-  render() {
-    return (
-      <div className="light"
-           onClick={this.changeColor}
-           onMouseEnter={this.changeColor}
-           style={{backgroundColor: this.state.color}}>
-      </div>
-    );
-  }
+function Light(props) {
+  return (
+    <div className="light"
+          onMouseEnter={() => props.handleLightEnter(props.index)}
+          onMouseDown={() => props.handleLightClick(props.index)}
+          style={{backgroundColor: props.color}}>
+    </div>
+  );
 }
+
+Light.propTypes = {
+  color: PropTypes.string.isRequired,
+  handleLightEnter: PropTypes.func.isRequired,
+  handleLightClick: PropTypes.func.isRequired,
+};
 
 export default Light;

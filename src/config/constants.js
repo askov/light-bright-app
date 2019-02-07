@@ -1,3 +1,20 @@
 export default {
-  DEFAULT_LIGHT_COLORS: ['red', 'green', 'yellow', 'blue'],
+  DEFAULT_LIGHT_COLORS: [
+    '#898cff',
+    '#ff89b5',
+    '#ffdc89',
+    '#90d4f7',
+    '#71e096',
+    '#f5a26f',
+    '#668de5',
+    '#ed6d79',
+    '#5ad0e5',
+    '#da97e0',
+    '#cff381',
+    '#ff96e3',
+    '#bb96ff',
+    '#67eebd',
+  ],
+  LIGHT_QUANTITY: 162,
+  DIMMED_LIGHT_COLOR: 'grey',
 }
