@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 
-function Header(props) {
+function LightControls(props) {
   return (
     <div className="header">
+    <button onClick={props.handleResetAll}>Reset all</button>
     <button onClick={props.handleReset}>Reset</button>
-    <button onClick={props.handleUndo}>Undo</button>
     </div>
   );
 }
 
-Header.propTypes = {
+LightControls.propTypes = {
+  handleResetAll: PropTypes.func.isRequired,
   handleReset: PropTypes.func.isRequired,
-  handleUndo: PropTypes.func.isRequired,
 };
 
-export default Header;
+export default LightControls;

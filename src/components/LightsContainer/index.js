@@ -3,6 +3,7 @@ import Light from '../Light';
 
 import colorGenerator from '../../utils/colorGenerator'
 import config  from '../../config';
+import LightControls from '../LightControls';
 
 import './style.scss';
 
@@ -12,13 +13,15 @@ class LightsContainer extends Component {
     this.cg = new colorGenerator();
     this.state = {
       lights: this._createLightsArray(),
+      recent: [],
       colorMode: false,
     }
     this.turnOnColorMode = this.turnOnColorMode.bind(this);
     this.turnOffColorMode = this.turnOffColorMode.bind(this);
     this.handleLightEnter = this.handleLightEnter.bind(this);
     this.handleLightClick = this.handleLightClick.bind(this);
-
+    this.resetAllLights = this.resetAllLights.bind(this);
+    this.resetLight = this.resetLight.bind(this);
   }
   _createLightsArray() {
     return [...Array(config.constants.LIGHT_QUANTITY)].map(() => {
@@ -39,10 +42,19 @@ class LightsContainer extends Component {
   }
 
   updateColor(index) {
-    const oc = this.state.lights[index].color;
-    const lights = [...this.state.lights];
-    lights[index].color = this.cg.getRandomColor(oc);
-    this.setState({ lights });
+    // this.setState({ lights });
+    this.setState((state) => {
+      const oc = state.lights[index].color;
+      const lights = [...state.lights];
+      lights[index].color = this.cg.getRandomColor(oc);
+      const recent = [...state.recent];
+      recent.push(index);
+      console.log('push ', index)
+      return {
+        lights,
+        recent,
+      }
+    });
   }
 
   turnOnColorMode(event) {
@@ -55,27 +67,46 @@ class LightsContainer extends Component {
     this.setState({colorMode: false})
   }
 
+  resetAllLights() {
+    const lights = this._createLightsArray();
+    this.setState({ lights });
+  }
+
+  resetLight(index) {
+    const lights = [...this.state.lights];
+    lights[index].color = config.constants.DIMMED_LIGHT_COLOR;
+    this.setState({ lights })
+  }
+
   render() {
     return (
-      <div className="lights-container"
-           onMouseDown={this.turnOnColorMode}
-           onMouseLeave={this.turnOffColorMode}
-           onMouseUp={this.turnOffColorMode}
-      >
-        {
-          this.state.lights.map((el, index) => {
-            return (
-              <Light key={index}
-                     index={index}
-                     handleLightEnter={this.handleLightEnter}
-                     handleLightClick={this.handleLightClick}
-                     color={el.color}
-              />
-            )
-          })
-        }
+      <>
+        <LightControls
+          handleResetAll={this.resetAllLights}
+          handleReset={() => 1}
+        />
+        <div className="lights-container"
+            onMouseDown={this.turnOnColorMode}
+            onMouseLeave={this.turnOffColorMode}
+            onMouseUp={this.turnOffColorMode}
+        >
+          {
+            this.state.lights.map((el, index) => {
+              return (
+                <Light key={index}
+                      index={index}
+                      handleLightEnter={this.handleLightEnter}
+                      handleLightClick={this.handleLightClick}
+                      handleDoubleClick={this.resetLight}
+                      color={el.color}
+                />
+              )
+            })
+          }
 
-      </div>
+        </div>
+      </>
+
     );
   }
 }
