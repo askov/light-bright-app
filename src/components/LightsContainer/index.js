@@ -13,7 +13,8 @@ class LightsContainer extends Component {
     this.cg = new colorGenerator();
     this.state = {
       lights: this._createLightsArray(),
-      recent: [],
+      buffer: [],
+      streak: [],
       colorMode: false,
     }
     this.turnOnColorMode = this.turnOnColorMode.bind(this);
@@ -21,8 +22,8 @@ class LightsContainer extends Component {
     this.handleLightEnter = this.handleLightEnter.bind(this);
     this.handleLightClick = this.handleLightClick.bind(this);
     this.resetAllLights = this.resetAllLights.bind(this);
-    this.resetLight = this.resetLight.bind(this);
   }
+
   _createLightsArray() {
     return [...Array(config.constants.LIGHT_QUANTITY)].map(() => {
       return {
@@ -42,20 +43,29 @@ class LightsContainer extends Component {
   }
 
   updateColor(index) {
-    // this.setState({ lights });
     this.setState((state) => {
       const oc = state.lights[index].color;
       const lights = [...state.lights];
       lights[index].color = this.cg.getRandomColor(oc);
-      const recent = [...state.recent];
-      recent.push(index);
-      console.log('push ', index)
       return {
         lights,
-        recent,
+      }
+    });
+    this.updateBuffer(index);
+  }
+
+  updateBuffer(index) {
+    this.setState((state) => {
+      const buffer = [...state.buffer];
+      if (state.buffer.indexOf(index) === -1) {
+        buffer.push(index);
+      }
+      return {
+        buffer,
       }
     });
   }
+
 
   turnOnColorMode(event) {
     // To prevent DnD
@@ -64,7 +74,16 @@ class LightsContainer extends Component {
   }
 
   turnOffColorMode() {
-    this.setState({colorMode: false})
+    this.setState((state) => {
+      const newState = {
+        colorMode: false,
+        buffer: [],
+      };
+      if (state.buffer.length) {
+        newState.streak = [...state.buffer];
+      }
+      return newState;
+    });
   }
 
   resetAllLights() {
@@ -72,33 +91,44 @@ class LightsContainer extends Component {
     this.setState({ lights });
   }
 
-  resetLight(index) {
-    const lights = [...this.state.lights];
-    lights[index].color = config.constants.DIMMED_LIGHT_COLOR;
-    this.setState({ lights })
+  dimLights(index) {
+    this.setState((state) => {
+      const lights = [...state.lights];
+      (index ? [index] : state.streak).forEach((index) => {
+        lights[index].color = config.constants.DIMMED_LIGHT_COLOR;
+      });
+      return {
+        lights,
+      }
+    });
   }
+
 
   render() {
     return (
       <>
+      <header>
+        Light-Bright App
         <LightControls
           handleResetAll={this.resetAllLights}
-          handleReset={() => 1}
+          handleReset={() => this.dimLights()}
         />
+      </header>
+
         <div className="lights-container"
-            onMouseDown={this.turnOnColorMode}
-            onMouseLeave={this.turnOffColorMode}
-            onMouseUp={this.turnOffColorMode}
+             onMouseDown={this.turnOnColorMode}
+             onMouseLeave={this.turnOffColorMode}
+             onMouseUp={this.turnOffColorMode}
         >
           {
             this.state.lights.map((el, index) => {
               return (
                 <Light key={index}
-                      index={index}
-                      handleLightEnter={this.handleLightEnter}
-                      handleLightClick={this.handleLightClick}
-                      handleDoubleClick={this.resetLight}
-                      color={el.color}
+                       index={index}
+                       handleLightEnter={this.handleLightEnter}
+                       handleLightClick={this.handleLightClick}
+                       handleDoubleClick={(index) => this.dimLights(index)}
+                       color={el.color}
                 />
               )
             })
