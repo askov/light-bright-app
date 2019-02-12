@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Light from '../Light';
 
-import colorGenerator from '../../utils/colorGenerator'
+import ColorGenerator from '../../utils/colorGenerator'
+import StreakBuffer from '../../utils/streakBuffer'
 import config  from '../../config';
 import LightControls from '../LightControls';
 
@@ -10,20 +11,18 @@ import './style.scss';
 class LightsContainer extends Component {
   constructor(props) {
     super(props);
-    this.cg = new colorGenerator();
+    // Colors logic
+    this.cg = new ColorGenerator();
+    // Buffer to save last streak
+    this.sb = new StreakBuffer();
+    // Turn off/on coloring mode
+    this.colorMode = false;
     this.state = {
       lights: this._createLightsArray(),
-      buffer: [],
-      streak: [],
-      colorMode: false,
     }
-    this.turnOnColorMode = this.turnOnColorMode.bind(this);
-    this.turnOffColorMode = this.turnOffColorMode.bind(this);
-    this.handleLightEnter = this.handleLightEnter.bind(this);
-    this.handleLightClick = this.handleLightClick.bind(this);
-    this.resetAllLights = this.resetAllLights.bind(this);
   }
 
+  // Create initial light array
   _createLightsArray() {
     return [...Array(config.constants.LIGHT_QUANTITY)].map(() => {
       return {
@@ -32,17 +31,34 @@ class LightsContainer extends Component {
     });
   }
 
-  handleLightEnter(index) {
-    if (this.state.colorMode) {
-      this.updateColor(index);
+  // Coloring mode
+  turnOnColorMode = (event) => {
+    // To prevent DnD
+    event.preventDefault && event.preventDefault()
+    this.colorMode = true;
+  }
+
+  turnOffColorMode = () => {
+    this.colorMode = false;
+    this.sb.flush();
+  }
+
+  // Light event handlers
+  handleLightEnter = (index) => {
+    if (this.colorMode) {
+      this._updateColor(index);
     }
   }
 
-  handleLightClick(index) {
-    this.updateColor(index);
+  handleLightClick = (index) => {
+    this._updateColor(index);
   }
 
-  updateColor(index) {
+  handleDoubleClick = (index) => {
+    this.dimLights(index);
+  }
+
+  _updateColor(index) {
     this.setState((state) => {
       const oc = state.lights[index].color;
       const lights = [...state.lights];
@@ -51,51 +67,21 @@ class LightsContainer extends Component {
         lights,
       }
     });
-    this.updateBuffer(index);
+    this.sb.push(index);
   }
 
-  updateBuffer(index) {
-    this.setState((state) => {
-      const buffer = [...state.buffer];
-      if (state.buffer.indexOf(index) === -1) {
-        buffer.push(index);
-      }
-      return {
-        buffer,
-      }
-    });
-  }
-
-
-  turnOnColorMode(event) {
-    // To prevent DnD
-    event.preventDefault && event.preventDefault()
-    this.setState({colorMode: true})
-  }
-
-  turnOffColorMode() {
-    this.setState((state) => {
-      const newState = {
-        colorMode: false,
-        buffer: [],
-      };
-      if (state.buffer.length) {
-        newState.streak = [...state.buffer];
-      }
-      return newState;
-    });
-  }
-
-  resetAllLights() {
+  // Light controls
+  dimAllLights = () => {
     const lights = this._createLightsArray();
     this.setState({ lights });
   }
 
-  dimLights(index) {
+  dimLights = (index) => {
+    const streak = this.sb.getStreak();
     this.setState((state) => {
       const lights = [...state.lights];
-      (index ? [index] : state.streak).forEach((index) => {
-        lights[index].color = config.constants.DIMMED_LIGHT_COLOR;
+      (Number.isInteger(index) ? [index] : streak).forEach((el) => {
+        lights[el].color = config.constants.DIMMED_LIGHT_COLOR;
       });
       return {
         lights,
@@ -103,18 +89,16 @@ class LightsContainer extends Component {
     });
   }
 
-
   render() {
     return (
       <>
       <header>
         Light-Bright App
         <LightControls
-          handleResetAll={this.resetAllLights}
-          handleReset={() => this.dimLights()}
+          handleResetAll={this.dimAllLights}
+          handleReset={this.dimLights}
         />
       </header>
-
         <div className="lights-container"
              onMouseDown={this.turnOnColorMode}
              onMouseLeave={this.turnOffColorMode}
@@ -127,13 +111,12 @@ class LightsContainer extends Component {
                        index={index}
                        handleLightEnter={this.handleLightEnter}
                        handleLightClick={this.handleLightClick}
-                       handleDoubleClick={(index) => this.dimLights(index)}
+                       handleDoubleClick={this.handleDoubleClick}
                        color={el.color}
                 />
               )
             })
           }
-
         </div>
       </>
 
