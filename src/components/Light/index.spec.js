@@ -1,4 +1,5 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Light from './index';
 
@@ -14,11 +15,18 @@ describe('<Light />', () => {
     props = {
       index: 42,
       color: 'red',
-      handleLightEnter: () => null,
-      handleLightClick: () => null,
-      handleDoubleClick: () => null,
+      handleLightEnter: jest.fn(),
+      handleLightClick: jest.fn(),
+      handleDoubleClick: jest.fn(),
     };
     wrapper = createWrapper(props);
+  });
+
+  test('renders correctly', () => {
+    const tree = renderer
+      .create(<Light {...props} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   test('renders light container div', () => {
@@ -31,29 +39,20 @@ describe('<Light />', () => {
   });
 
   test('handles mouse enter event properly', () => {
-    const x = jest.fn();
-    props.handleLightEnter = x;
-    wrapper = createWrapper(props);
     wrapper.simulate('mouseenter');
-    expect(x.mock.calls.length).toBe(1);
-    expect(x).toBeCalledWith(props.index);
+    expect(props.handleLightEnter.mock.calls.length).toBe(1);
+    expect(props.handleLightEnter).toBeCalledWith(props.index);
   });
 
   test('handles mouse down event properly', () => {
-    const x = jest.fn();
-    props.handleLightClick = x;
-    wrapper = createWrapper(props);
     wrapper.simulate('mousedown');
-    expect(x.mock.calls.length).toBe(1);
-    expect(x).toBeCalledWith(props.index);
+    expect(props.handleLightClick.mock.calls.length).toBe(1);
+    expect(props.handleLightClick).toBeCalledWith(props.index);
   });
 
   test('handles double click event properly', () => {
-    const x = jest.fn();
-    props.handleDoubleClick = x;
-    wrapper = createWrapper(props);
     wrapper.simulate('dblclick');
-    expect(x.mock.calls.length).toBe(1);
-    expect(x).toBeCalledWith(props.index);
+    expect(props.handleDoubleClick.mock.calls.length).toBe(1);
+    expect(props.handleDoubleClick).toBeCalledWith(props.index);
   });
 });
