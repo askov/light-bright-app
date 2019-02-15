@@ -92,13 +92,13 @@ class LightsContainer extends Component {
   render() {
     return (
       <>
-      <header>
+      <div>
         Light-Bright App
         <LightControls
           handleResetAll={this.dimAllLights}
           handleReset={this.dimLights}
         />
-      </header>
+      </div>
         <div className="lights-container"
              onMouseDown={this.turnOnColorMode}
              onMouseLeave={this.turnOffColorMode}

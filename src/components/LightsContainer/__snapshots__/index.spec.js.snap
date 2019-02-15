@@ -1,0 +1,1616 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LightContainer /> renders correctly 1`] = `
+Array [
+  <div>
+    Light-Bright App
+    <div
+      className="light-controls"
+    >
+      <button
+        className="control-button"
+        onClick={[Function]}
+      >
+        Reset all
+      </button>
+      <button
+        className="control-button"
+        onClick={[Function]}
+      >
+        Reset
+      </button>
+    </div>
+  </div>,
+  <div
+    className="lights-container"
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+    <div
+      className="light"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      style={
+        Object {
+          "backgroundColor": "grey",
+        }
+      }
+    />
+  </div>,
+]
+`;
