@@ -37,4 +37,11 @@ describe('<LightContainer />', () => {
     expect(wrapper.find(Light)).toHaveLength(config.constants.LIGHT_QUANTITY);
   });
 
+  it('light changes color on click', () => {
+    const light = wrapper.find(Light).get(0);
+    expect(light.props.color).toBe(config.constants.DIMMED_LIGHT_COLOR);
+    wrapper.find(Light).at(0).simulate('click');
+    expect(wrapper.find(Light).get(0).props.color).not.toBe(config.constants.DIMMED_LIGHT_COLOR);
+  });
+
 });

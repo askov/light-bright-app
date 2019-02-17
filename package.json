@@ -26,6 +26,8 @@
   "devDependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
-    "node-sass": "^4.11.0"
+    "jest-puppeteer": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "puppeteer": "^1.12.2"
   }
 }
