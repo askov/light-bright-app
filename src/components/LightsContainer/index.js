@@ -92,7 +92,7 @@ class LightsContainer extends Component {
   render() {
     return (
       <>
-      <div>
+      <div id="#test">
         Light-Bright App
         <LightControls
           handleResetAll={this.dimAllLights}

@@ -3,6 +3,7 @@
 exports[`<Light /> renders correctly 1`] = `
 <div
   className="light"
+  data-testid="light42"
   onDoubleClick={[Function]}
   onMouseDown={[Function]}
   onMouseEnter={[Function]}

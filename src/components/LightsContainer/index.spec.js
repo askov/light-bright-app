@@ -5,6 +5,8 @@ import LightContainer from './index';
 import Light from '../Light';
 import LightControls from '../LightControls';
 import config  from '../../config';
+import {render, fireEvent, cleanup, waitForElement} from 'react-testing-library';
+import 'jest-dom/extend-expect';
 
 describe('<LightContainer />', () => {
   let props;
@@ -29,19 +31,32 @@ describe('<LightContainer />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders one <LightControls /> component', () => {
+  test('renders one <LightControls /> component', () => {
     expect(wrapper.find(LightControls)).toHaveLength(1);
   });
 
-  it('renders predefined number of <Light /> components', () => {
+  test('renders predefined number of <Light /> components', () => {
     expect(wrapper.find(Light)).toHaveLength(config.constants.LIGHT_QUANTITY);
   });
 
-  it('light changes color on click', () => {
-    const light = wrapper.find(Light).get(0);
-    expect(light.props.color).toBe(config.constants.DIMMED_LIGHT_COLOR);
-    wrapper.find(Light).at(0).simulate('click');
-    expect(wrapper.find(Light).get(0).props.color).not.toBe(config.constants.DIMMED_LIGHT_COLOR);
-  });
+});
 
+describe('<LightContainer /> integration with lights and controls', async () => {
+  afterEach(cleanup);
+  const setup = () => {
+    // const utils = render(<LightContainer />)
+    // // const input = utils.getByLabelText('cost-input')
+    // return {
+    //   // input,
+    //   ...utils,
+    // }
+    return render(<LightContainer />);
+  }
+  test('light changes color on click', () => {
+    const utils = setup();
+    // const button = document.querySelector(['.light']);
+    const x = utils.getByTestId('light1');
+    expect(x).toHaveStyle(`backgroundColor: bleue`);
+    // expect(wrapper.find(LightControls)).toHaveLength(1);
+  });
 });
