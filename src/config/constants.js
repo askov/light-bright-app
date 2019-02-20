@@ -16,5 +16,5 @@ export default {
     '#67eebd',
   ],
   LIGHT_QUANTITY: 144,
-  DIMMED_LIGHT_COLOR: 'grey',
+  DIMMED_LIGHT_COLOR: 'gray',
 }
