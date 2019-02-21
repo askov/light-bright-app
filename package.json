@@ -13,6 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:e2e": "./node_modules/.bin/jest -c src/e2e/jest.config.js",
+    "cypress": "npx cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,6 +27,8 @@
   ],
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
+    "chai-colors": "^1.0.1",
+    "cypress": "^3.1.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "jest-dom": "^3.1.2",
