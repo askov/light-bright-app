@@ -7,11 +7,13 @@ function LightControls(props) {
     <div className="light-controls">
       <button onClick={props.handleResetAll}
               className="control-button"
+              data-testid="reset-all"
       >
         Reset all
       </button>
       <button onClick={props.handleReset}
               className="control-button"
+              data-testid="reset"
       >
         Reset
       </button>
