@@ -45,7 +45,7 @@ describe('Light bright app', function() {
     checkBackgroundColor(selector('light1'));
   });
 
-  it('light changes color on mouse enter with mousedown', function() {
+  it('light changes color on mouse enter with mousedown (color mode on)', function() {
     cy.get('.lights-container').trigger('mousedown')
     cy.get(selector('light0')).trigger('mouseover');
     cy.get('.lights-container').trigger('mouseup')
@@ -54,7 +54,7 @@ describe('Light bright app', function() {
     checkBackgroundColor(selector('light1'));
   });
 
-  it('light changes color on mouse enter with mousedown', function() {
+  it('color mode turns off when mouse leaves container', function() {
     cy.get('.lights-container').trigger('mousedown')
     cy.get(selector('light0')).trigger('mouseover');
     cy.get('.lights-container').trigger('mouseout')

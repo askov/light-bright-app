@@ -78,7 +78,7 @@ describe('<LightContainer /> integration with lights and controls', () => {
   });
 
 
-  // Do we need theese?
+  // Do we need theese here (covered by e2e cypress tests)?
   test('color mode is activated on mouse down', () => {
     // @todo
   });

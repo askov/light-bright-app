@@ -1,3 +1,13 @@
+.control-panel {
+  display: flex;
+  color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  align-items: center;
+  padding: 20px;
+}
+
 .lights-container {
   display: grid;
   grid-template-columns: repeat(18, 1fr);

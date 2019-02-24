@@ -4,13 +4,14 @@ import './style.scss';
 
 function Light(props) {
   return (
-    <div className="light"
-         data-testid={`light${props.index}`}
-         onMouseEnter={() => props.handleLightEnter(props.index)}
-         onMouseDown={() => props.handleLightClick(props.index)}
-         onDoubleClick={() => props.handleDoubleClick(props.index)}
-         style={{backgroundColor: props.color}}>
-    </div>
+    <div
+      className="light"
+      data-testid={`light${props.index}`}
+      onMouseEnter={() => props.handleLightEnter(props.index)}
+      onMouseDown={() => props.handleLightClick(props.index)}
+      onDoubleClick={() => props.handleDoubleClick(props.index)}
+      style={{backgroundColor: props.color}}
+    />
   );
 }
 

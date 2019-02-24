@@ -9,3 +9,9 @@
 - User Story: I should get a circle of different color on each click.
 - User Story: I can click on the 'Reset' button to remove the recent color.
 - User Story: I can click on the 'Reset All' button to remove all the colors from the circles.
+
+# Start in dev mode
+- ```npm start```
+# Tests
+- ```npm run test``` - unit tests
+- ```npm run cypress``` - cypress e2e tests (with started project)

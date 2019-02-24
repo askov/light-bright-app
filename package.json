@@ -12,7 +12,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:e2e": "./node_modules/.bin/jest -c src/e2e/jest.config.js",
     "cypress": "npx cypress open",
     "eject": "react-scripts eject"
   },
@@ -31,6 +30,7 @@
     "cypress": "^3.1.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "eslint-config-airbnb": "^17.1.0",
     "jest-dom": "^3.1.2",
     "node-sass": "^4.11.0"
   }
